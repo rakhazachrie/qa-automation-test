@@ -17,6 +17,14 @@ Test Case 3
     Wait Until Element is Visible    class:boards-page-board-section-list-item    10
     Click Element    class:boards-page-board-section-list-item
     BuiltIn.Sleep    4s
+    # Membuat List
+    Click Element    xpath= //a[@class='open-add-list js-open-add-list']
+    Input Text    xpath= //div[@class='js-add-list list-wrapper mod-add']//input[@class='list-name-input']    To Do
+    Click Element    xpath= //input[@value='Add list']
+    BuiltIn.Sleep    2s
+    Input Text    xpath= //div[@class='js-add-list list-wrapper mod-add']//input[@class='list-name-input']    Done
+    Click Element    xpath= //input[@value='Add list']
+    BuiltIn.Sleep    2s
     # Validasi List
     Page Should Contain Element    xpath= //textarea[contains(text(), 'To Do')]
     Page Should Contain Element    xpath= //textarea[contains(text(), 'Done')]
