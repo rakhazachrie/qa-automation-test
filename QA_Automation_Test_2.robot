@@ -21,6 +21,7 @@ Test Case 2
     Click Element    class:_3Qtx4lodxp9J0E
     Wait Until Element is Visible    class:_34UgjJGHhRxDQr    10
     Input Text    xpath=//label[@class='_34UgjJGHhRxDQr']//input[@class='nch-textfield__input _2N2CjUFKhgeXLO _2N2CjUFKhgeXLO _3pXGTS3_pwahBt']    Testing AUTOMATION
-    BuiltIn.Sleep    2s
+    Wait Until Element is Visible    xpath= //button[@class='_2NEPrwhDnsG_qO _3TTqkG5muwOzqZ _3Ik0JLsERwh6Ui _1Tu9wiuW4Te8Rx']
     Click Button    xpath= //button[@class='_2NEPrwhDnsG_qO _3TTqkG5muwOzqZ _3Ik0JLsERwh6Ui _1Tu9wiuW4Te8Rx']
     BuiltIn.Sleep    2s
+    Page Should Contain    Testing AUTOMATION

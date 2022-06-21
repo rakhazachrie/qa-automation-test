@@ -17,6 +17,7 @@ Test Case 4
     Wait Until Element is Visible    class:boards-page-board-section-list-item    10
     Click Element    class:boards-page-board-section-list-item
     BuiltIn.Sleep    4s
+    # Memindahkan card
     Click Element    xpath= //a[@class='list-card js-member-droppable ui-droppable']
     BuiltIn.Sleep    2s
     Click Element    xpath= //a[@class='button-link js-move-card']
